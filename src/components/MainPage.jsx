@@ -11,8 +11,7 @@ const MainPage = () => {
 
     return (
         <div>
-            {beers.map(beer => <h1>{beer.name}</h1>)}
-            <Welcome />
+            <Welcome/>
         </div>
     )
 }
