@@ -47,8 +47,18 @@ table {
 	border-spacing: 0;
 }
 
-.welcome-text{
+.welcome-text-container{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
     width:50vw;
+}
+
+.welcome-text{
+    font-size: 7em;
+    color:rgb(238, 255, 87);
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .circles-container{

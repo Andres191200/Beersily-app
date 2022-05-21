@@ -3,8 +3,12 @@ import '../styles/welcome.css'
 const Welcome = () => {
     return (
         <div className="main-welcome-container">
-            <div className="welcome-text">
-                
+            <div className="welcome-text-container">
+                <div className="welcome-text">
+                    <h1>Hi...</h1>
+                    <h1>This is</h1>
+                    <h1>Beersily</h1>
+                </div>
             </div>
             <div className="circles-container">
                 <div className="circle1-container">
