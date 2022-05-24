@@ -1,6 +1,36 @@
-    .header-container{
-        position:fixed;
-        background-color: var(--text-color-1);
-        height:5vh;
-        width:100vw;
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: fixed;
+        background-color: var(--bg-color-2);
+        height: 8vh;
+        width: 100vw;
+    }
+
+    .header-item {
+        display: inline;
+        margin-inline: .5rem;
+    }
+
+    .header-item > a{
+        position:relative;
+        text-decoration: none;
+        color:rgb(251, 0, 247);
+        font: bold 1.2rem 'Roboto', sans-serif;
+    }
+
+    .header-item > a::before{
+        content:'';
+        position:absolute;
+        inset: 0 0 0 0;
+        background-color: rgb(57, 13, 126);
+        transition:transform .2s cubic-bezier(.57,.21,.69,1.25);
+        z-index: -10;
+        transform:scaleX(0);
+        transform-origin: left;
+    }
+
+    .header-item > a:hover::before{
+        transform: scaleX(1);
     }

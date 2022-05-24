@@ -1,6 +1,8 @@
 :root{
     --text-color-1 : rgb(188, 0, 188);
     --text-color-2 : rgb(74, 246, 180);
+    --text-color-3: rgb(143, 31, 31);
+    --text-color-4: rgb(47, 130, 240);
     --bg-color-1 : rgb(21, 21, 21);
     --bg-color-2 : rgb(38, 38, 38);
 }

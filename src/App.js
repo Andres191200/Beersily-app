@@ -1,10 +1,16 @@
 import MainPage from './components/MainPage.jsx';
-import './styles/styles.css'
+import './styles/styles.css';
+
 
 function App() {
   return (
     <div className="App">
-      <MainPage/>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+
+      <MainPage />
     </div>
   );
 }
