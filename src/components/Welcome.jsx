@@ -8,6 +8,7 @@ const Welcome = () => {
                     <h1>Hi...</h1>
                     <h1>This is</h1>
                     <h1>Beersily</h1>
+                    <p>The best beer in the world, <a href="#beers">See ours!</a></p>
                 </div>
             </div>
             <div className="circles-container">
