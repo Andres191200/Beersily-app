@@ -1,0 +1,6 @@
+    .header-container{
+        position:fixed;
+        background-color: var(--text-color-1);
+        height:5vh;
+        width:100vw;
+    }

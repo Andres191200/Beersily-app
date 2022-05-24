@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import GetBeers from "../utils/GetBeers";
 import Welcome from "./Welcome";
+import Header from "./Header";
 
 const MainPage = () => {
     const [beers, setBeers] = useState(null)
@@ -11,6 +12,7 @@ const MainPage = () => {
 
     return (
         <div>
+            <Header/>
             <Welcome/>
         </div>
     )
