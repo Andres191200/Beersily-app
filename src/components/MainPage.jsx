@@ -8,7 +8,7 @@ const MainPage = () => {
     const [beers, setBeers] = useState(null)
     const [theme, setTheme] = useState('dark');
 
-    const handleTheme = (e) =>{
+    const handleTheme = (e) => {
         e.target.checked ? setTheme('light') : setTheme('dark')
     }
 
@@ -18,9 +18,9 @@ const MainPage = () => {
 
     return (
         <div>
-            <Header theme={theme} handleTheme={handleTheme}/>
-            <Welcome/>
-            <WhyUs/>
+            <Header theme={theme} handleTheme={handleTheme} />
+            <Welcome />
+            <WhyUs />
         </div>
     )
 }

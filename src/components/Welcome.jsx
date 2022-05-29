@@ -201,7 +201,7 @@ const Welcome = () => {
                         </svg>
                     </div>
                 </div>
-            </div>
+            </div >
         </div>
     )
 }

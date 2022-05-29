@@ -21,7 +21,7 @@
         position: relative;
         text-decoration: none;
         color: rgb(251, 0, 247);
-        font: bold 1.2rem 'Roboto', sans-serif;
+        font: bold 1.2rem var(--font-family-1)
     }
 
     .header-item>a::before {

@@ -17,7 +17,9 @@ const Header = ({ theme, handleTheme }) => {
             <div className="header-container">
                 <label className="switch" ref={switchRef}>
                     <input type="checkbox" className={`${theme}-mode`} onChange={handleTheme} onClick={handleClick} />
-                    <span className={`slider round ${theme}-slider`}>{theme==='dark' ? <FontAwesomeIcon icon={faMoon}/> : <FontAwesomeIcon icon={faSun}/>}</span>
+                    <span className={`slider round ${theme}-slider`}>
+                        {theme==='dark' ? <FontAwesomeIcon icon={faMoon}/> : <FontAwesomeIcon icon={faSun}/>}
+                    </span>
                 </label>
                 <ul>
                     <li className="header-item"><a href="#home">Home</a></li>
