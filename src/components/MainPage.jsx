@@ -3,6 +3,7 @@ import GetBeers from "../utils/GetBeers";
 import Welcome from "./Welcome";
 import Header from "./Header";
 import WhyUs from "./WhyUs";
+import Beers from "./Beers";
 
 const MainPage = () => {
     const [beers, setBeers] = useState(null)
@@ -21,7 +22,7 @@ const MainPage = () => {
             <Header theme={theme} handleTheme={handleTheme} />
             <Welcome />
             <WhyUs />
-            
+            <Beers/>
         </div>
     )
 }

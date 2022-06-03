@@ -69,12 +69,17 @@
 .whyus-icons  .description{
     margin-block: .5rem;
     height:100%;
-    width:80%;
+    width:90%;
 }
 
-.whyus-icons >div:nth-child(1), .whyus-icons >div:nth-child(2){
-    border-right: 1px solid #666;
+.whyus-icons >div{
+    background:var(--bg-color-1);
+    height:max-content;
+    padding-block: 1rem;
+    margin-inline: 1rem;
+    border-radius: 1rem;
 }
+
 
 .whyus_icon_title{
     font-size: 2rem;
