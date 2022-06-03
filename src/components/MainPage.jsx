@@ -21,6 +21,7 @@ const MainPage = () => {
             <Header theme={theme} handleTheme={handleTheme} />
             <Welcome />
             <WhyUs />
+            
         </div>
     )
 }

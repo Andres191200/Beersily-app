@@ -27,7 +27,7 @@ const ICONS = [
 const WhyUs = () => {
     const [icons, setIcons] = useState(ICONS)
     return (
-        <div className="whyus-container">
+        <div className="whyus-container" id="whyus">
             <h1>¿Why us?</h1>
             <div className="whyus" >
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur adipisci architecto magni quasi quisquam assumenda porro quo totam deserunt! Ipsa ad minus saepe nihil iusto rem id blanditiis nesciunt. Magnam laudantium animi cupiditate, perspiciatis aperiam fugiat reiciendis unde? Vel atque dolorum, sint esse voluptate quia impedit et illo tenetur velit quod provident, optio laborum exercitationem possimus. Aut dolor nihil nam.</p>

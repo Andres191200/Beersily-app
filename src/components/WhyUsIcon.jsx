@@ -8,7 +8,7 @@ const WhyUsIcon = ({props}) => {
             <div className="icon">
                 <FontAwesomeIcon icon={icon} />
             </div>
-            <h3>{title}</h3>
+            <h3 className="whyus_icon_title">{title}</h3>
             <div className="description">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet inventore quos enim saepe repellat, eveniet vitae delectus perspiciatis reprehenderit, eius mollitia, architecto debitis praesentium distinctio totam? Libero dicta pariatur reprehenderit!</p>
             </div>
