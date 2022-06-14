@@ -1,0 +1,32 @@
+.beer > img{
+    width:18%;
+    margin-bottom: .5rem;
+}
+
+.beer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--bg-color-1);
+}
+
+.beer-info{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-family: var(--font-family-1);
+    height:4vh;
+    width:100%;
+    background-color: var(--bg-color-2);
+}
+
+.price{
+    color:var(--text-color-1)
+}
+
+.price, .rate{
+    margin-inline: .5rem;
+    width:100%;
+}

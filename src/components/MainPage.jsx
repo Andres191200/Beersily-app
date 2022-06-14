@@ -6,7 +6,7 @@ import WhyUs from "./WhyUs";
 import Beers from "./Beers";
 
 const MainPage = () => {
-    const [beers, setBeers] = useState(null)
+    const [beers, setBeers] = useState(null) //eslint-disable-line
     const [theme, setTheme] = useState('dark');
 
     const handleTheme = (e) => {

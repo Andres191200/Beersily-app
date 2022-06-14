@@ -25,7 +25,7 @@ const ICONS = [
 ]
 
 const WhyUs = () => {
-    const [icons, setIcons] = useState(ICONS)
+    const [icons, setIcons] = useState(ICONS) //eslint-disable-line
     return (
         <div className="whyus-container" id="whyus">
             <h1>¿Why us?</h1>
