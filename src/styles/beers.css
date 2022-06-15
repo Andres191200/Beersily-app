@@ -2,7 +2,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: var(--bg-color-2);
+    background-image: url('https://images8.alphacoders.com/689/689100.jpg');
 }
 
 .beers-container {
@@ -45,7 +45,7 @@
     background-color: rgb(33, 38, 60);
     height: 70%;
     width: 90%;
-    overflow-x: scroll;
+    overflow-x: auto;
     border-radius: 1rem;
 }
 
@@ -85,7 +85,7 @@
         transform: translateX(-200%);
     }
     75%{
-        transform: translateX(-200%);
+        transform: translateX(-150%);
     }
 
     100% {

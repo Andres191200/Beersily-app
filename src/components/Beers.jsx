@@ -2,48 +2,51 @@ import '../styles/styles.css';
 import '../styles/beers.css';
 import { useState } from 'react';
 import Beer from './Beer';
-import scrollBeers from '../utils/ScrollBeers.js'
 import { useEffect } from 'react';
 
 const BEST_BEERS = [
     {
         name: 'Red ginger beer',
         price: 8,
-        img: 'https://images.punkapi.com/v2/112.png'
+        img: 'https://images.punkapi.com/v2/112.png',
+        type:'Ale'
     },
     {
         name: 'Red vodky beer',
         price: 12,
-        img: 'https://images.punkapi.com/v2/82.png'
+        img: 'https://images.punkapi.com/v2/82.png',
+        type:'Lager'
     },
     {
-        name: 'Red ginger/blue lemon beer',
+        name: 'Blue lemon w/gin beer',
         price: 12,
-        img: 'https://images.punkapi.com/v2/42.png'
+        img: 'https://images.punkapi.com/v2/42.png',
+        type:'Ale'
     }
     ,
     {
         name: 'Mutant beer',
         price: 15,
-        img: 'https://images.punkapi.com/v2/66.png'
+        img: 'https://images.punkapi.com/v2/66.png',
+        type:'Porter'
     },
     {
         name: 'Mini iron',
         price: 6,
-        img: 'https://images.punkapi.com/v2/77.png'
+        img: 'https://images.punkapi.com/v2/77.png',
+        type:'Blonde Ale'
     },
     {
         name: 'Venom drink',
         price: 15,
-        img: 'https://images.punkapi.com/v2/46.png'
+        img: 'https://images.punkapi.com/v2/46.png',
+        type:'Porter'
     }
 ]
 
 const Beers = () => {
     const [bestBeers, setBestBeers] = useState(BEST_BEERS)
-    useEffect(() =>{
-        scrollBeers()
-    })
+
     return (
         <div className="beers-main-container">
             <div className="beers-container">

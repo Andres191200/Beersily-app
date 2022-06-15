@@ -1,10 +1,12 @@
 .beer > img{
-    width:18%;
+    width:15%;
     margin-bottom: .5rem;
 }
 
 .beer{
     display: flex;
+    height:12vw;
+    width:12vw;
     flex-direction: column;
     justify-content: flex-end;
     background-color: var(--bg-color-1);
@@ -22,11 +24,29 @@
     background-color: var(--bg-color-2);
 }
 
-.price{
-    color:var(--text-color-1)
+.price, .type{
+    font-size: 1vw;
 }
 
-.price, .rate{
-    margin-inline: .5rem;
+.price{
+    color:var(--text-color-1);
+    margin-left: .3rem;
     width:100%;
 }
+
+.type{
+    color:var(--text-color-4);
+    font-weight: bold;
+    margin-right: .3rem;
+}
+
+.name{
+    height:15%;
+    font-size: 1.1vw;
+    font-weight: bold;
+    font-family: var(--font-family-1);
+    text-align: center;
+    color:var(--text-color-2);
+}
+
+
