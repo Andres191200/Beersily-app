@@ -2,6 +2,8 @@ import '../styles/styles.css';
 import '../styles/beers.css';
 import { useState } from 'react';
 import Beer from './Beer';
+import scrollBeers from '../utils/ScrollBeers.js'
+import { useEffect } from 'react';
 
 const BEST_BEERS = [
     {
@@ -39,6 +41,9 @@ const BEST_BEERS = [
 
 const Beers = () => {
     const [bestBeers, setBestBeers] = useState(BEST_BEERS)
+    useEffect(() =>{
+        scrollBeers()
+    })
     return (
         <div className="beers-main-container">
             <div className="beers-container">
@@ -48,7 +53,7 @@ const Beers = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo necessitatibus dolores expedita unde est iure ab illo placeat assumenda tempora, illum omnis enim ipsum eos sapiente? Assumenda, consequatur tenetur?</p>
                 </div>
                 <div className="best-beers-container">
-                    <div className="best-beers">
+                    <div className="best-beers" id="best-beers">
                         {
                             bestBeers.map(beer => <Beer beer={beer} />)
                         }
