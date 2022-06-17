@@ -1,7 +1,9 @@
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../styles/beer.css'
 
 const Beer = ({ beer }) => {
-    const { name, price, img, type } = beer
+    const { name, price, img} = beer
     return (
         <div className="beer">
             <div className="name">
@@ -12,8 +14,8 @@ const Beer = ({ beer }) => {
                 <div className="price">
                     <p>{price} EUR</p>
                 </div>
-                <div className="type">
-                    <p>{type}</p>
+                <div className="add-cart">
+                    <FontAwesomeIcon icon={faCartShopping}/>
                 </div>
             </div>
         </div>

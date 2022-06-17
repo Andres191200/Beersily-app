@@ -10,6 +10,16 @@
     flex-direction: column;
     justify-content: flex-end;
     background-color: var(--bg-color-1);
+    transition: .2s background-color cubic-bezier( 0.14, 0.62, 0.45, 0.66 )
+} 
+
+.beer:hover{
+    cursor:pointer;
+    background-color: #3a3a3a
+}
+
+.beer:hover > img{
+    animation: shake-beer .5s linear
 }
 
 .beer-info{
@@ -34,10 +44,8 @@
     width:100%;
 }
 
-.type{
-    color:var(--text-color-4);
-    font-weight: bold;
-    margin-right: .3rem;
+.add-cart{
+    color:rgb(85, 193, 85);
 }
 
 .name{
@@ -47,6 +55,24 @@
     font-family: var(--font-family-1);
     text-align: center;
     color:var(--text-color-2);
+}
+
+@keyframes shake-beer{
+    10%{
+        transform:rotate(15deg)
+    }   
+    25%{
+        transform:rotate(-15deg)
+    }
+    40%{
+        transform:rotate(15deg)
+    }
+    55%{
+        transform:rotate(-15deg)
+    }
+    70%{
+        transform:rotate(15deg)
+    }
 }
 
 

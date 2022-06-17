@@ -2,7 +2,6 @@ import '../styles/styles.css';
 import '../styles/beers.css';
 import { useState } from 'react';
 import Beer from './Beer';
-import { useEffect } from 'react';
 
 const BEST_BEERS = [
     {
