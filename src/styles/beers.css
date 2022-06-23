@@ -15,11 +15,30 @@
 
 .beers-info-container {
     padding: 1rem;
+    display:flex;
+    flex-direction: column;
     position: relative;
     height: 60vh;
     width: 30vw;
     background-color: #1c1919;
     border: 2px solid var(--text-color-1);
+}
+
+.beers-info-container > a{
+    text-decoration: none;
+    width:max-content;
+    color:var(--text-color-2);
+    font-family: century gothic;
+    border:2px solid var(--text-color-1);
+    border-radius: 1rem;
+    padding:.5rem;
+    font-weight: bold;
+    transition: color .2s, border-color .5s;
+}
+
+.beers-info-container > a:hover{
+    color:var(--text-color-1);
+    border-color: var(--text-color-4);
 }
 
 .beers-info-container,
@@ -45,7 +64,7 @@
     background-color: rgb(33, 38, 60);
     height: 70%;
     width: 90%;
-    overflow-x: scroll;
+    overflow-x: hidden;
     border-radius: 1rem;
 }
 

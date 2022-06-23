@@ -165,7 +165,7 @@ table {
     position: relative;
     text-decoration: none;
     transition: color .3s ease-out;
-    color: var(--text-color-2);
+    color: var(--text-color-4);
 }
 
 .welcome-text a::before {

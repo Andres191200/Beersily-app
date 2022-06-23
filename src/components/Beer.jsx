@@ -1,11 +1,18 @@
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../styles/beerModal.css'
 import '../styles/beer.css'
 
-const Beer = ({ beer }) => {
-    const { name, price, img} = beer
+const Beer = ({ beer, setModalBeerIsOpen, setBeer }) => {
+    const { name, price, img } = beer;
+
+    const openBeerModal = () => {
+        setModalBeerIsOpen(true)
+        setBeer(beer)
+    }
+
     return (
-        <div className="beer">
+        <div className="beer" onClick={openBeerModal}>
             <div className="name">
                 <span>{name}</span>
             </div>
@@ -15,7 +22,7 @@ const Beer = ({ beer }) => {
                     <p>{price} EUR</p>
                 </div>
                 <div className="add-cart">
-                    <FontAwesomeIcon icon={faCartShopping}/>
+                    <FontAwesomeIcon icon={faCartShopping} />
                 </div>
             </div>
         </div>

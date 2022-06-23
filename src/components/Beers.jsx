@@ -2,6 +2,7 @@ import '../styles/styles.css';
 import '../styles/beers.css';
 import { useState } from 'react';
 import Beer from './Beer';
+import BeerModal from './beerModal';
 
 const BEST_BEERS = [
     {
@@ -45,19 +46,29 @@ const BEST_BEERS = [
 
 const Beers = () => {
     const [bestBeers, setBestBeers] = useState(BEST_BEERS)
+    const [modalBeerIsOpen, setModalBeerIsOpen] = useState(false)
+    const [beer, setBeer] = useState({})
+
 
     return (
         <div className="beers-main-container">
+            <div className={`modal-beer`}>
+                <BeerModal beer={beer} modalBeerIsOpen={modalBeerIsOpen}/>
+            </div>
             <div className="beers-container">
                 <div className="beers-info-container">
                     <h1>Our best beers...</h1>
                     <p>These are our best beers!!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo necessitatibus dolores expedita unde est iure ab illo placeat assumenda tempora, illum omnis enim ipsum eos sapiente? Assumenda, consequatur tenetur?</p>
+                    <a href="/beers">Our beers</a>
                 </div>
                 <div className="best-beers-container">
                     <div className="best-beers" id="best-beers">
                         {
-                            bestBeers.map(beer => <Beer beer={beer} />)
+                            bestBeers.map(beer => <Beer beer={beer} 
+                                modalBeerIsOpen={modalBeerIsOpen} 
+                                setModalBeerIsOpen={setModalBeerIsOpen}
+                                setBeer={setBeer}/>)
                         }
                     </div>
                 </div>
