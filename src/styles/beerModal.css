@@ -1,12 +1,15 @@
 .main-modal-container{
     display:none;
+    z-index: 999;
+}
+
+.main-modal-container.open + *{
     pointer-events: none;
 }
 
 .main-modal-container.open{
     display:flex;
     position:fixed;
-    z-index: 100;
     top:0;
     left:0;
     height:100vh;
