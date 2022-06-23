@@ -10,6 +10,8 @@
 .main-modal-container.open{
     display:flex;
     position:fixed;
+    align-items: center;
+    justify-content: center;
     top:0;
     left:0;
     height:100vh;
@@ -19,4 +21,11 @@
 
 .main-modal-container > h1{
     color:white;
+}
+
+.beer-modal-container{
+    position:absolute;
+    background-color: var(--text-color-1);
+    height:min(700px, 80vh);
+    width:500px;
 }

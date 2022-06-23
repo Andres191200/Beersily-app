@@ -7,7 +7,9 @@ const BeerModal = ({beer, modalBeerIsOpen}) =>{
     
     return ReactDOM.createPortal(
         <div className={`main-modal-container ${modalBeerIsOpen && 'open'}`}>
-            <h1>{name}</h1>
+            <div className="beer-modal-container">
+
+            </div>
         </div>,
         document.getElementById('beer-modal')
     )
