@@ -9,38 +9,44 @@ const BEST_BEERS = [
         name: 'Red ginger beer',
         price: 8,
         img: 'https://images.punkapi.com/v2/112.png',
-        type:'Ale'
+        type:'Ale',
+        description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, in fuga! Quidem ipsa voluptas nam veniam minima officiis sequi voluptatem.'
     },
     {
         name: 'Red vodky beer',
         price: 12,
         img: 'https://images.punkapi.com/v2/82.png',
-        type:'Lager'
+        type:'Lager',
+        description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, in fuga! Quidem ipsa voluptas nam veniam minima officiis sequi voluptatem.'
     },
     {
         name: 'Blue lemon w/gin beer',
         price: 12,
         img: 'https://images.punkapi.com/v2/42.png',
-        type:'Ale'
+        type:'Ale',
+        description:' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum deleniti, sit voluptas numquam quod eius, cupiditate architecto, nam recusandae aut consectetur laudantium omnis aliquid animi non odio atque. Voluptates!'
     }
     ,
     {
         name: 'Mutant beer',
         price: 15,
         img: 'https://images.punkapi.com/v2/66.png',
-        type:'Porter'
+        type:'Porter',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, blanditiis pariatur omnis doloremque officia consequuntur fuga vero veniam consequatur nobis voluptatem tenetur quaerat ea quibusdam.'
     },
     {
         name: 'Mini iron',
         price: 6,
         img: 'https://images.punkapi.com/v2/77.png',
-        type:'Blonde Ale'
+        type:'Blonde Ale',
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi rem veritatis itaque magnam dolorem vel laudantium, ea molestiae? Quasi ipsa officiis voluptas enim praesentium repellat molestias similique mollitia quae error soluta eaque dignissimos cum tempora quos, vel odio vero nam ratione placeat. Quam, ipsa fugiat!'
     },
     {
         name: 'Venom drink',
         price: 15,
         img: 'https://images.punkapi.com/v2/46.png',
-        type:'Porter'
+        type:'Porter',
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat enim cupiditate, quae corporis magnam laboriosam ab quia voluptatibus. Quia sit commodi sed esse mollitia corrupti ipsa vitae error exercitationem architecto quaerat, voluptatum unde itaque tenetur?'
     }
 ]
 
