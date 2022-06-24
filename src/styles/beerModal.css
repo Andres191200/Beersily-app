@@ -31,7 +31,7 @@
     border: 2px solid var(--text-color-1);
     border-radius: 1rem;
     height: min(700px, 80vh);
-    width: 500px;
+    width: 50vw;
 }
 
 .beer-modal-img, .beer-modal-desc{
@@ -43,33 +43,54 @@
 .beer-modal-img {
     height:100%;
     width:50%;
+    background-color: #1b1a26;;
 }
 
 .beer-modal-img > img{
     height:80%;
-    border:2px solid var(--text-color-2);
-    padding: 2rem;
     border-radius: 1rem;
 }
 
 .beer-modal-info {
     display:flex;
     flex-direction: column;
-    background: green;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--bg-color-2);
     height:100%;
     width:50%;
 }
 
 .beer-modal-name{
-    background:blue;
+    color:#FFF;
+    font-size: 4.5vh;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     margin-top:1rem;
-    height:2rem;
 }
 
 .beer-modal-description{
     text-align: center;
+    font-size: 2.2vh;
+    color:var(--text-color-1);
     margin-inline: .5rem;
+}
+
+.beer-modal-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:.5rem;
+    width:95%;
+    height:25%;
+}
+
+.beer-modal-type{
+    display:flex;
+    align-items: center;
+    font-size: 1.75vh;
+    padding:.5rem;
+    color:var(--text-color-2);
+    border:2px solid #171629;
+    border-radius: 1rem;
 }

@@ -12,9 +12,13 @@ const BeerModalDetails = ({ beer }) => {
                 <div className="beer-modal-description">
                     <p>{description}</p>
                 </div>
-                <div className="details">
+                <div className="beer-modal-details">
                     <div className="beer-modal-type">{type}</div>
-                    <div className="beer-modal-add-favorites"></div>
+                    <div className="beer-modal-type">{type}</div>
+                    <div className="beer-modal-type">{type}</div>
+                    <div className="beer-modal-type">{type}</div>
+                    <div className="beer-modal-type">{type}</div>
+                    <div className="beer-modal-type">{type}</div>
                 </div>
                 <div className="beer-modal-price">{price}</div>
             </div>
