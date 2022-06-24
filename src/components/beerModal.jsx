@@ -3,10 +3,10 @@ import '../styles/beerModal.css';
 import BeerModalDetails from './BeerModalDetails';
 
 
-const BeerModal = ({beer, modalBeerIsOpen}) =>{
+const BeerModal = ({beer, modalBeerIsOpen, setModalBeerIsOpen}) =>{
     return ReactDOM.createPortal(
         <div className={`main-modal-container ${modalBeerIsOpen && 'open'}`}>
-            <BeerModalDetails beer={beer}/>
+            <BeerModalDetails beer={beer} setModalBeerIsOpen={setModalBeerIsOpen}/>
         </div>,
         document.getElementById('beer-modal')
     )

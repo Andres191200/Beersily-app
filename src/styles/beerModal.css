@@ -32,6 +32,7 @@
     border-radius: 1rem;
     height: min(700px, 80vh);
     width: 50vw;
+    overflow: hidden;
 }
 
 .beer-modal-img, .beer-modal-desc{
@@ -77,8 +78,27 @@
     margin-inline: .5rem;
 }
 
+.beer-modal-price{
+    width:80%;
+    margin-inline-start: 1rem;
+    align-self: flex-start;
+    height:5vh;
+    background-color: #171629;
+    color:#FFF;
+    font-weight: bold;
+    font-family: var(--font-family-1);
+    border:1px solid var(--text-color-4);
+    transition: background-color .5s cubic-bezier(0.17,0.84,0.44,1);
+}
+
+.beer-modal-price:hover, .beer-modal-fav-icon:hover{
+    background-color: #46455c;
+    cursor:pointer;
+}
+
 .beer-modal-details{
     display: grid;
+    font-weight: bold;
     grid-template-columns: repeat(2, 1fr);
     gap:.5rem;
     width:95%;
@@ -87,10 +107,42 @@
 
 .beer-modal-type{
     display:flex;
-    align-items: center;
-    font-size: 1.75vh;
     padding:.5rem;
-    color:var(--text-color-2);
-    border:2px solid #171629;
+    font-size: 1.75vh;
     border-radius: 1rem;
+    align-items: center;
+    color:var(--text-color-2);
+    border:2px solid #0a0923;
+    background-color:#171629 ;
+}
+
+.price-fav-container{
+    display:flex;
+    width:100%;
+}
+
+.beer-modal-fav-icon{
+    height: 5vh;
+    border:none;
+    color:#FFF;
+    background: #171629;
+    width:max(15%, 2vw);
+    margin-inline: .75rem;
+    border:1px solid var(--text-color-4);
+    transition: background-color .5s cubic-bezier(0.17,0.84,0.44,1);
+}
+
+.close-modal-button{
+    position:absolute;
+    background-color: transparent;
+    border:none;
+    right:.3rem;
+    top:.3rem;
+    color:var(--text-color-2);
+    font-size: 1.2rem;
+}
+
+.close-modal-button:hover{
+    cursor:pointer;
+    color:var(--text-color-1);
 }
