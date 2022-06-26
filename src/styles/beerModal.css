@@ -13,6 +13,7 @@
     position: fixed;
     align-items: center;
     justify-content: center;
+    transition:transform .5s;
     top: 0;
     left: 0;
     height: 100vh;
@@ -24,10 +25,19 @@
     color: white;
 }
 
+.main-modal-container>.beer-modal-container {
+    transform: scale(0);
+    
+}
+
+.main-modal-container.open>.beer-modal-container{
+    transform: scale(1);
+}
+
 .beer-modal-container {
+    animation: 'modal-fade-in' .3s cubic-bezier(0.18,0.89,0.32,1.27);
     position: absolute;
-    display:flex;
-    background-color: var(--bg-color-1);
+    display: flex;
     border: 2px solid var(--text-color-1);
     border-radius: 1rem;
     height: min(700px, 80vh);
@@ -35,114 +45,126 @@
     overflow: hidden;
 }
 
-.beer-modal-img, .beer-modal-desc{
-    display:flex;
+.beer-modal-img,
+.beer-modal-desc {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .beer-modal-img {
-    height:100%;
-    width:50%;
-    background-color: #1b1a26;;
+    height: 100%;
+    width: 50%;
+    background-color: #1b1a26;
+    ;
 }
 
-.beer-modal-img > img{
-    height:80%;
+.beer-modal-img>img {
+    height: 80%;
     border-radius: 1rem;
 }
 
 .beer-modal-info {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background: var(--bg-color-2);
-    height:100%;
-    width:50%;
+    height: 100%;
+    width: 50%;
 }
 
-.beer-modal-name{
-    color:#FFF;
+.beer-modal-name {
+    color: #FFF;
     font-size: 4.5vh;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top:1rem;
+    margin-top: 1rem;
 }
 
-.beer-modal-description{
+.beer-modal-description {
     text-align: center;
     font-size: 2.2vh;
-    color:var(--text-color-1);
+    color: var(--text-color-1);
     margin-inline: .5rem;
 }
 
-.beer-modal-price{
-    width:80%;
+.beer-modal-add-to-cart-button {
+    width: 80%;
     margin-inline-start: 1rem;
     align-self: flex-start;
-    height:5vh;
+    height: 5vh;
     background-color: #171629;
-    color:#FFF;
+    color: #FFF;
     font-weight: bold;
     font-family: var(--font-family-1);
-    border:1px solid var(--text-color-4);
-    transition: background-color .5s cubic-bezier(0.17,0.84,0.44,1);
+    border: 1px solid var(--text-color-4);
+    transition: background-color .5s cubic-bezier(0.17, 0.84, 0.44, 1);
 }
 
-.beer-modal-price:hover, .beer-modal-fav-icon:hover{
+.beer-modal-add-to-cart-button:hover,
+.beer-modal-fav-icon:hover {
     background-color: #46455c;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.beer-modal-details{
+.beer-modal-details {
     display: grid;
     font-weight: bold;
     grid-template-columns: repeat(2, 1fr);
-    gap:.5rem;
-    width:95%;
-    height:25%;
+    gap: .5rem;
+    width: 95%;
+    height: 25%;
 }
 
-.beer-modal-type{
-    display:flex;
-    padding:.5rem;
+.beer-modal-type {
+    display: flex;
+    padding: .5rem;
     font-size: 1.75vh;
     border-radius: 1rem;
     align-items: center;
-    color:var(--text-color-2);
-    border:2px solid #0a0923;
-    background-color:#171629 ;
+    color: var(--text-color-2);
+    border: 2px solid #0a0923;
+    background-color: #171629;
 }
 
-.price-fav-container{
-    display:flex;
-    width:100%;
+.price-fav-container {
+    display: flex;
+    width: 100%;
 }
 
-.beer-modal-fav-icon{
+.beer-modal-fav-icon {
     height: 5vh;
-    border:none;
-    color:#FFF;
+    border: none;
+    color: #FFF;
     background: #171629;
-    width:max(15%, 2vw);
+    width: max(15%, 2vw);
     margin-inline: .75rem;
-    border:1px solid var(--text-color-4);
-    transition: background-color .5s cubic-bezier(0.17,0.84,0.44,1);
+    border: 1px solid var(--text-color-4);
+    transition: background-color .5s cubic-bezier(0.17, 0.84, 0.44, 1);
 }
 
-.close-modal-button{
-    position:absolute;
+.close-modal-button {
+    position: absolute;
     background-color: transparent;
-    border:none;
-    right:.3rem;
-    top:.3rem;
-    color:var(--text-color-2);
+    border: none;
+    right: .3rem;
+    top: .3rem;
+    color: var(--text-color-2);
     font-size: 1.2rem;
 }
 
-.close-modal-button:hover{
-    cursor:pointer;
-    color:var(--text-color-1);
+.close-modal-button:hover {
+    cursor: pointer;
+    color: var(--text-color-1);
+}
+
+@keyframes modal-fade-in{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
