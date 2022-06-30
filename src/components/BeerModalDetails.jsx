@@ -31,7 +31,7 @@ const BeerModalDetails = ({ beer, setModalBeerIsOpen }) => {
                     <div className="beer-modal-type"><span>ABV: {abv}</span></div>
                 </div>
                 <div className="price-fav-container">
-                    <button className="beer-modal-price">Add To Cart</button>
+                    <button className="beer-modal-add-to-cart-button">Add To Cart</button>
                     <button className="beer-modal-fav-icon"><FontAwesomeIcon icon={faStar}/></button>
                 </div>
             </div>
