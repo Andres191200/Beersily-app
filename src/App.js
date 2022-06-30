@@ -1,4 +1,6 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MainPage from './components/MainPage.jsx';
+import NotFound from './components/NotFound.jsx';
 import './styles/styles.css';
 
 
@@ -11,9 +13,12 @@ function App() {
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
-
-
-      <MainPage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage/>}/>
+          <Route path="*" element={<NotFound/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
