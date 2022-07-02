@@ -164,7 +164,8 @@
 
 .clicked-add-to-cart-button{
     animation: clicked-add-to-cart-button .5s cubic-bezier(0.86,0,0.07,1) forwards;
-}
+    pointer-events: none;
+}   
 
 @keyframes modal-fade-in{
     from{
@@ -181,9 +182,10 @@
     }
     80%{
         transform:scaleX(.12);
+        
     }
     100%{
-        transform:scaleX(.12);
+        transform:scaleX(.13);
         border-radius: 100%;
         border:none;
         background-color: rgb(63, 134, 63);
