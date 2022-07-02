@@ -24,7 +24,7 @@ const Beers = () => {
                     <h1>Our best beers...</h1>
                     <p>These are our best beers!!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo necessitatibus dolores expedita unde est iure ab illo placeat assumenda tempora, illum omnis enim ipsum eos sapiente? Assumenda, consequatur tenetur?</p>
-                    <a href="/beers">Our beers</a>
+                    <a target='_blank' href="/beers">Our beers</a>
                 </div>
                 <div className="best-beers-container">
                     <div className="best-beers" id="best-beers">

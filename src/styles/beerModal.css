@@ -149,15 +149,21 @@
     position: absolute;
     background-color: transparent;
     border: none;
-    right: .3rem;
-    top: .3rem;
+    right: .5rem;
+    top: .5rem;
     color: var(--text-color-2);
-    font-size: 1.2rem;
+    font-size: 1.5vw;
+    transition: transform .5s ease;
 }
 
 .close-modal-button:hover {
     cursor: pointer;
+    transform:rotate(1turn);
     color: var(--text-color-1);
+}
+
+.clicked-add-to-cart-button{
+    animation: clicked-add-to-cart-button .5s cubic-bezier(0.86,0,0.07,1) forwards;
 }
 
 @keyframes modal-fade-in{
@@ -166,5 +172,20 @@
     }
     to{
         transform: scale(1);
+    }
+}
+
+@keyframes clicked-add-to-cart-button{
+    0%{
+
+    }
+    80%{
+        transform:scaleX(.12);
+    }
+    100%{
+        transform:scaleX(.12);
+        border-radius: 100%;
+        border:none;
+        background-color: rgb(63, 134, 63);
     }
 }

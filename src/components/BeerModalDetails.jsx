@@ -1,17 +1,24 @@
 import { faRemove, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 
 
 const BeerModalDetails = ({ beer, setModalBeerIsOpen }) => {
     const { name, price, img, type, description, attenuation, ph, ebc, srm, abv } = beer;
+    const [textButtonContent, setTextButtonContent] = useState('ADD TO CART')
 
-    const closeBeerModal = () =>{
+    const closeBeerModal = () => {
         setModalBeerIsOpen(false);
     }
-    
+
+    const addToCart = (event) => {
+        event.target.classList.add('clicked-add-to-cart-button');
+        setTextButtonContent('')
+    }
+
     return (
-        <div className="beer-modal-container">
+        <div className="beer-modal-container" onClick={(e) => { e.stopPropagation() }}>
             <div className="beer-modal-img">
                 <img src={img} alt="beer-img" />
             </div>
@@ -31,11 +38,11 @@ const BeerModalDetails = ({ beer, setModalBeerIsOpen }) => {
                     <div className="beer-modal-type"><span>ABV: {abv}</span></div>
                 </div>
                 <div className="price-fav-container">
-                    <button className="beer-modal-add-to-cart-button">Add To Cart</button>
-                    <button className="beer-modal-fav-icon"><FontAwesomeIcon icon={faStar}/></button>
+                    <button className="beer-modal-add-to-cart-button" onClick={(event) => addToCart(event)}>{textButtonContent}</button>
+                    <button className="beer-modal-fav-icon"><FontAwesomeIcon icon={faStar} /></button>
                 </div>
             </div>
-            <button className="close-modal-button" onClick={closeBeerModal}><FontAwesomeIcon icon={faRemove}/></button>
+            <button className="close-modal-button" onClick={closeBeerModal}><FontAwesomeIcon icon={faRemove} /></button>
         </div>
     )
 }
