@@ -49,7 +49,7 @@ const BeerModalDetails = ({ beer, setModalBeerIsOpen }) => {
                 </div>
             </div>
             <button className="close-modal-button" onClick={closeBeerModal}><FontAwesomeIcon icon={faRemove} /></button>
-        </div>
+        </div> 
     )
 }
 
