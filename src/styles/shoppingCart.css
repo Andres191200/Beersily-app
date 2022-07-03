@@ -1,0 +1,24 @@
+.shopping-cart{
+    color:rgb(102, 195, 102);
+    font-size: 1.5vw;
+}
+
+.shopping-cart:hover{
+    cursor:pointer;
+    animation:shakeCartHover .3s ease-out;
+}
+
+@keyframes shakeCartHover{
+    0%{
+        transform:rotate(15deg)
+    }
+    30%{
+        transform:rotate(-15deg)
+    }
+    60%{
+        transform:rotate(15deg)
+    }
+    90%{
+        transform:rotate(-15deg)
+    }
+}
