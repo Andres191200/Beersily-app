@@ -15,7 +15,7 @@ const Beers = () => {
 
 
     return (
-        <div className="beers-main-container">
+        <div className="beers-main-container" id="beers">
             <div className={`modal-beer`}>
                 <BeerModal beer={beer} modalBeerIsOpen={modalBeerIsOpen} setModalBeerIsOpen={setModalBeerIsOpen} />
             </div>
