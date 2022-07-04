@@ -95,7 +95,7 @@
     margin-inline-start: 1rem;
     align-self: flex-start;
     height: 5vh;
-    background-color: #171629;
+    background-color: var(--bg-color-3);
     color: #FFF;
     font-weight: bold;
     font-family: var(--font-family-1);
@@ -126,7 +126,7 @@
     align-items: center;
     color: var(--text-color-2);
     border: 2px solid #0a0923;
-    background-color: #171629;
+    background-color: var(--bg-color-3);
 }
 
 .price-fav-container {
@@ -138,7 +138,7 @@
     height: 5vh;
     border: none;
     color: #FFF;
-    background: #171629;
+    background: var(--bg-color-3);
     width: max(15%, 2vw);
     margin-inline: .75rem;
     border: 1px solid var(--text-color-4);

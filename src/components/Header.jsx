@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon, faSun, faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 import '../styles/header.css';
-import '../styles/shoppingCart.css'
+import ShoppingCart from './ShoppingCart';
 
 
 const Header = ({ theme, handleTheme }) => {
@@ -106,10 +106,12 @@ const Header = ({ theme, handleTheme }) => {
                                     </clipPath>
                                 </defs>
                             </svg>
-
                         </a>
                     </li>
-                    <li className="header-item"><FontAwesomeIcon icon={faCartShopping} className="shopping-cart" /></li>
+                    <li className="header-item">
+                        
+                        <ShoppingCart/>
+                    </li>
                 </ul>
             </div>
         </header>

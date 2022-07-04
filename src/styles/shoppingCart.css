@@ -1,12 +1,28 @@
 .shopping-cart{
     color:rgb(102, 195, 102);
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 
 .shopping-cart:hover{
     cursor:pointer;
     animation:shakeCartHover .3s ease-out;
 }
+
+.cart{
+    display: none;
+}
+
+.cart.open{
+    position:absolute;
+    display:flex;
+    height:400px;
+    width:250px;
+    top:var(--header-height);
+    right: 1vw;
+    background-color: var(--bg-color-3)
+}
+
+
 
 @keyframes shakeCartHover{
     0%{
