@@ -1,5 +1,6 @@
 const BEST_BEERS = [
     {
+        id:'1',
         name: 'Red ginger beer',
         price: 8,
         img: 'https://images.punkapi.com/v2/112.png',
@@ -12,6 +13,7 @@ const BEST_BEERS = [
         abv:'6'
     },
     {
+        id:'2',
         name: 'Red vodky beer',
         price: 12,
         img: 'https://images.punkapi.com/v2/82.png',
@@ -24,6 +26,7 @@ const BEST_BEERS = [
         abv:'4.9'
     },
     {
+        id:'3',
         name: 'Blue lemon w/gin beer',
         price: 12,
         img: 'https://images.punkapi.com/v2/42.png',
@@ -37,6 +40,7 @@ const BEST_BEERS = [
     }
     ,
     {
+        id:'4',
         name: 'Mutant beer',
         price: 15,
         img: 'https://images.punkapi.com/v2/66.png',
@@ -49,6 +53,7 @@ const BEST_BEERS = [
         abv:'5.5'
     },
     {
+        id:'5',
         name: 'Mini iron',
         price: 6,
         img: 'https://images.punkapi.com/v2/77.png',
@@ -61,6 +66,7 @@ const BEST_BEERS = [
         abv:'7.11'
     },
     {
+        id:'6',
         name: 'Venom drink',
         price: 15,
         img: 'https://images.punkapi.com/v2/46.png',

@@ -29,7 +29,7 @@ const Beers = () => {
                 <div className="best-beers-container">
                     <div className="best-beers" id="best-beers">
                         {
-                            bestBeers.map(beer => <Beer beer={beer}
+                            bestBeers.map(beer => <Beer key={beer.id} beer={beer}
                                 setModalBeerIsOpen={setModalBeerIsOpen}
                                 setBeer={setBeer} />)
                         }
