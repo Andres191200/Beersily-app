@@ -18,9 +18,9 @@ const BeerModalDetails = ({ beer, setModalBeerIsOpen }) => {
     const addToCart = (event) => {
         setAddToCartButtonClick(true);
         setTextButtonContent('');
-        setTimeout(() =>{ //Closing modal after added to cart anim
-            closeBeerModal()
-        },1500)
+        setTimeout(() => { //Closing modal after added to cart anim
+            // closeBeerModal()
+        }, 1500)
     }
 
     return (
@@ -43,13 +43,20 @@ const BeerModalDetails = ({ beer, setModalBeerIsOpen }) => {
                     <div className="beer-modal-type"><span>SRM: {srm}</span></div>
                     <div className="beer-modal-type"><span>ABV: {abv}</span></div>
                 </div>
-                <div className="price-fav-container">
-                    <button className={`beer-modal-add-to-cart-button ${addToCartButtonClick && 'clicked-add-to-cart-button' }`} onClick={(event) => addToCart(event)}>{textButtonContent}</button>
-                    <button className="beer-modal-fav-icon"><FontAwesomeIcon icon={faStar} /></button>
+                <div className="price-container">
+                    <button className={`beer-modal-add-to-cart-button ${addToCartButtonClick && 'clicked-add-to-cart-button'}`} onClick={(event) => addToCart(event)}>
+                        {textButtonContent}
+                    </button>
+                    <svg width="20" height="32" viewBox="0 0 201 152">
+                        <path className="checkmark-path1" d="M8 95L57 144" stroke="white" strokeWidth="15" strokeLinecap="round" />
+                        <path className="checkmark-path2" d="M58 143L193.5 7.5" stroke="white" strokeWidth="15" strokeLinecap="round" />
+                    </svg>
+
+
                 </div>
             </div>
             <button className="close-modal-button" onClick={closeBeerModal}><FontAwesomeIcon icon={faRemove} /></button>
-        </div> 
+        </div>
     )
 }
 

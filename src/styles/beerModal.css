@@ -92,8 +92,6 @@
 
 .beer-modal-add-to-cart-button {
     width: 80%;
-    margin-inline-start: 1rem;
-    align-self: flex-start;
     height: 5vh;
     background-color: var(--bg-color-3);
     color: #FFF;
@@ -129,20 +127,15 @@
     background-color: var(--bg-color-3);
 }
 
-.price-fav-container {
+.price-container {
     display: flex;
+    position:relative;
+    justify-content: center;
     width: 100%;
 }
 
-.beer-modal-fav-icon {
-    height: 5vh;
-    border: none;
-    color: #FFF;
-    background: var(--bg-color-3);
-    width: max(15%, 2vw);
-    margin-inline: .75rem;
-    border: 1px solid var(--text-color-4);
-    transition: background-color .5s cubic-bezier(0.17, 0.84, 0.44, 1);
+.price-container > svg{
+    position: absolute;
 }
 
 .close-modal-button {
@@ -164,8 +157,29 @@
 
 .clicked-add-to-cart-button{
     animation: clicked-add-to-cart-button .5s cubic-bezier(0.86,0,0.07,1) forwards;
+    
     pointer-events: none;
 }   
+
+.checkmark-path1{
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation-delay: 1.5s;
+}
+
+.checkmark-path2{
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;  
+    animation-delay: 2s;
+}
+
+.clicked-add-to-cart-button + svg > .checkmark-path1{ 
+    animation: checkmark-fade-in 100ms linear forwards 400ms;
+}
+
+.clicked-add-to-cart-button + svg > .checkmark-path2{ 
+    animation: checkmark-fade-in 100ms linear forwards 500ms;
+}
 
 @keyframes modal-fade-in{
     from{
@@ -178,16 +192,22 @@
 
 @keyframes clicked-add-to-cart-button{
     0%{
-
+        border-radius: 0;
     }
     80%{
-        transform:scaleX(.12);
+        width:5vh;
         
     }
     100%{
-        transform:scaleX(.13);
+        width:5vh;
         border-radius: 100%;
         border:none;
         background-color: rgb(63, 134, 63);
+    }
+}
+
+@keyframes checkmark-fade-in{
+    to{
+        stroke-dashoffset: 0;
     }
 }
