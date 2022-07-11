@@ -28,6 +28,7 @@
 .cart.open{
     opacity: 1;
     pointer-events: all;
+    z-index: 100;
     top:var(--header-height);  
     transform:translateY(0);
     background-color: var(--bg-color-3);

@@ -1,0 +1,59 @@
+.not-found-container {
+    display: flex;
+    background-color: var(--bg-color-1);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.not-found-text-container,
+.not-found-img-container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.not-found-text-container {
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: flex-start;
+    height: 60vh;
+}
+
+.not-found-text-container>h1 {
+    font-weight: bolder;
+    font-size: 5rem;
+    color:var(--text-color-1);
+}
+
+.not-found-text-container > p{
+    font-size: 1.3rem;
+    color:#FFF;
+}
+
+.not-found-text-container > p > a{
+    text-decoration: none;
+    color:var(--text-color-4);
+}
+
+.not-found-text-container > p > a:hover{
+    color:rgb(166, 179, 255)
+}
+
+.not-found-text-container > h1::first-letter{
+    color:var(--text-color-2);
+}
+
+.not-found-text-container > span{
+    font-size: 3rem;
+    color:#FCFF5F;
+}
+
+.not-found-img-container {
+    height: 80vh;
+}
+
+.beer-bottle{
+  
+}

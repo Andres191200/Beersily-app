@@ -178,7 +178,7 @@
 }
 
 .clicked-add-to-cart-button + svg > .checkmark-path2{ 
-    animation: checkmark-fade-in 100ms linear forwards 500ms;
+    animation: checkmark-fade-in 100ms linear forwards 550ms;
 }
 
 @keyframes modal-fade-in{

@@ -1,0 +1,5 @@
+export const ACTIONS = {
+    ADD_TO_CART: 'ADD TO CART',
+    REMOVE_FROM_CART: 'REMOVE FROM CART',
+    CLEAR_CART: 'CLEAR CART'
+}
