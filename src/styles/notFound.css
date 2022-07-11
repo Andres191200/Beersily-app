@@ -54,6 +54,7 @@
     height: 80vh;
 }
 
-.beer-bottle{
-  
+.not-found-img-container > svg{
+    width: 35vw;
+    transform:rotate(-15deg);
 }
