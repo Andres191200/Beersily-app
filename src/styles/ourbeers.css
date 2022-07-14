@@ -1,9 +1,9 @@
 .our-beers-main-container{
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height:100vh;
-    width:100vw;
     background-color: var(--bg-color-1);
 }
 
@@ -13,4 +13,9 @@
     height:90vh;
     gap:1rem;
     width:90vw;
+}
+
+.pagination > p{
+    font: bold 1rem var(--font-family-1);
+    color:#FFF;
 }

@@ -4,8 +4,8 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    height:10rem;
-    width:10rem;
+    height:8.5rem;
+    width:8.5rem;
     background-color: var(--bg-color-2);
     border:1px solid var(--text-color-1);
     border-radius:1rem;
@@ -16,4 +16,31 @@
 .our-beers-beer-img > img{
     height:5rem;
     width:1rem;
+}
+
+.our-beers-beer-info{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-family-1);
+    color:var(--text-color-2);
+    font-weight: bold;
+    text-align: center;
+}
+
+.our-beers-price-rate{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.our-beers-price{
+    color:var(--text-color-4)
+}
+
+.our-beers-price::after{
+    content:' EUR'
+    
 }
