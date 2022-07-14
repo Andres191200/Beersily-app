@@ -1,10 +1,14 @@
+import { CART_ITEMS } from "../components/ShoppingCart";
 import { ACTIONS } from "./shoppingCartActions";
 
 export const cartReducer = (state, { type, payload }) => {
+    const { beer } = payload
     switch (type) {
         case ACTIONS.ADD_TO_CART:
-            console.log(payload);
-            break;
+            return {
+                ...state,
+                cart:[...state.cart, beer]
+            }
         case ACTIONS.REMOVE_FROM_CART:
             console.log('remove from cart');
             break;

@@ -1,29 +1,13 @@
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import '../styles/beerModal.css'
-import '../styles/beer.css'
+import '../styles/beer.css';
 
-const Beer = ({ beer, setModalBeerIsOpen, setBeer }) => {
-    const { name, price, img } = beer;
-
-    const openBeerModal = () => {
-        setModalBeerIsOpen(true)
-        setBeer(beer)
-    }
-
-    return (
-        <div className="beer" onClick={openBeerModal}>
-            <div className="name">
-                <span>{name}</span>
+const Beer = ({beer}) =>{
+    return(
+        <div className="our-beers-beer">
+            <div className="our-beers-beer-img">
+                <img src={beer.image_url} alt="beer img"/>
             </div>
-            <img alt='beer' src={img} />
-            <div className="beer-info">
-                <div className="price">
-                    <p>{price} EUR</p>
-                </div>
-                <div className="add-cart">
-                    <FontAwesomeIcon icon={faCartShopping} />
-                </div>
+            <div className="our-beers-beer-info">
+
             </div>
         </div>
     )

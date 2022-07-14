@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '../styles/shoppingCart.css'
 import ItemCart from "./ItemCart";
 
-export const CART_ITEMS = [];
-export const CART_INITIAL_STATE = []
+export const CART_ITEMS = {
+    cart:[]
+};
 
 const ShoppingCart = () => {
     const [cartIsOpen, setCartIsOpen] = useState(false);
@@ -18,7 +19,7 @@ const ShoppingCart = () => {
         <>
             <FontAwesomeIcon icon={faCartShopping} className="shopping-cart" onClick={openCart} />
             <div className={`cart ${cartIsOpen && 'open'}`}>
-                {CART_ITEMS.length === 0 ? <span>There is no items!</span> : CART_ITEMS.map(item => {
+                {CART_ITEMS.cart.length === 0 ? <span>There is no items!</span> : CART_ITEMS.cart.map(item => {
                     return (
                         <ItemCart key={item.id} item={item} />
                     )

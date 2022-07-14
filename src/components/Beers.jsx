@@ -1,7 +1,7 @@
 import '../styles/styles.css';
 import '../styles/beers.css';
 import { useState } from 'react';
-import Beer from './Beer';
+import BestBeer from './BestBeer';
 import BeerModal from './beerModal';
 import BEST_BEERS from '../utils/BestBeers';
 
@@ -29,7 +29,7 @@ const Beers = () => {
                 <div className="best-beers-container">
                     <div className="best-beers" id="best-beers">
                         {
-                            bestBeers.map(beer => <Beer key={beer.id} beer={beer}
+                            bestBeers.map(beer => <BestBeer key={beer.id} beer={beer}
                                 setModalBeerIsOpen={setModalBeerIsOpen}
                                 setBeer={setBeer} />)
                         }

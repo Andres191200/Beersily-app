@@ -1,21 +1,20 @@
 import { useReducer } from "react";
 import { createContext } from "react";
-import { CART_INITIAL_STATE } from "../components/ShoppingCart";
 import { cartReducer } from "../utils/shoppingCartReducer";
+import {CART_ITEMS} from "../components/ShoppingCart"
 
 const shoppingCartContext = createContext();
 
-const ShoppingCartProvider = ({children}) =>{
-    const [state, dispatch] = useReducer(cartReducer, CART_INITIAL_STATE);
+const ShoppingCartProvider = ({ children }) => {
+    const [state, dispatch] = useReducer(cartReducer, CART_ITEMS);
+    const data = { dispatch }
 
-    const data = {dispatch}
-
-    return(
+    return (
         <shoppingCartContext.Provider value={data}>
             {children}
         </shoppingCartContext.Provider>
     )
 }
 
-export {ShoppingCartProvider}
+export { ShoppingCartProvider }
 export default shoppingCartContext

@@ -1,7 +1,7 @@
 import { faRemove } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext, useState } from "react";
-import shoppingCartContext, { ShoppingCartProvider } from "../context/shoppingReducerContext";
+import shoppingCartContext from "../context/shoppingReducerContext";
 import { ACTIONS } from "../utils/shoppingCartActions";
 
 const BeerModalDetails = ({ beer, setModalBeerIsOpen }) => {

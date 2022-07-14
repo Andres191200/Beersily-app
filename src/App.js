@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MainPage from './components/MainPage.jsx';
 import NotFound from './components/NotFound.jsx';
+import OurBeers from './components/OurBeers.jsx';
 import './styles/styles.css';
 
 
@@ -16,6 +17,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage/>}/>
+          <Route path="/beers" element={<OurBeers/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>

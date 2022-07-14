@@ -2,7 +2,7 @@ import '../styles/welcome.css'
 
 const Welcome = () => {
     return (
-        <div className="main-welcome-container">
+        <div className="main-welcome-container" id="home">
             <div className="welcome-text-container">
                 <div className="welcome-text">
                     <h1>Hi...</h1>

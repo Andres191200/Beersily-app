@@ -1,0 +1,16 @@
+.our-beers-main-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100vw;
+    background-color: var(--bg-color-1);
+}
+
+.our-beers-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height:90vh;
+    gap:1rem;
+    width:90vw;
+}
