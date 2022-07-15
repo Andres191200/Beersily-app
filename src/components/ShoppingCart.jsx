@@ -18,7 +18,7 @@ const ShoppingCart = () => {
     return (
         <>
             <FontAwesomeIcon icon={faCartShopping} className="shopping-cart" onClick={openCart} />
-            <div className={`cart ${cartIsOpen && 'open'}`}>
+            <div className={`cart cart-${cartIsOpen && 'open'}`}>
                 {CART_ITEMS.cart.length === 0 ? <span>There is no items!</span> : CART_ITEMS.cart.map(item => {
                     return (
                         <ItemCart key={item.id} item={item} />

@@ -8,11 +8,6 @@ import Beers from "./Beers";
 
 const MainPage = () => {
     const [beers, setBeers] = useState(null) //eslint-disable-line
-    const [theme, setTheme] = useState('dark');
-
-    const handleTheme = (e) => {
-        e.target.checked ? setTheme('light') : setTheme('dark')
-    }
 
     useEffect(() => {
         GetBeers().then(beers => setBeers(beers))
@@ -20,7 +15,7 @@ const MainPage = () => {
 
     return (
         <div>
-            <Header theme={theme} handleTheme={handleTheme} />
+            <Header/>
             <Welcome />
             <WhyUs />
             <BeerModalContextProvider>

@@ -1,7 +1,7 @@
     .header-container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         position: fixed;
         background-color: var(--bg-color-2);
         height: var(--header-height);
