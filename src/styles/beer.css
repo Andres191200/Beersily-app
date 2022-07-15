@@ -4,8 +4,8 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    height:8.5rem;
-    width:8.5rem;
+    height:9rem;
+    width:9rem;
     background-color: var(--bg-color-2);
     border:1px solid var(--text-color-1);
     border-radius:1rem;

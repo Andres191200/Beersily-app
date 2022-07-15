@@ -8,7 +8,7 @@ import Beer from './Beer';
 const OurBeers = () => {
     const [beers, setBeers] = useState([]);
     const [page, setPage] = useState(1);
-    const [maxPerPage, setMaxPerPage] = useState(15);
+    const [maxPerPage, setMaxPerPage] = useState(10);
     const [lastPage, setLastPage] = useState(0);
 
     useEffect(() => {
