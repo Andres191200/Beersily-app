@@ -1,14 +1,16 @@
+import { useState } from 'react';
+import { useContext } from 'react';
 import '../styles/styles.css';
 import '../styles/beers.css';
-import { useState } from 'react';
 import BestBeer from './BestBeer';
 import BeerModal from './beerModal';
 import BEST_BEERS from '../utils/BestBeers';
+import beerModalContext from '../context/beerModalContext';
 
 
 const Beers = () => {
     const [bestBeers, setBestBeers] = useState(BEST_BEERS)
-    const [modalBeerIsOpen, setModalBeerIsOpen] = useState(false)
+    const {modalBeerIsOpen, setModalBeerIsOpen} = useContext(beerModalContext)
     const [beer, setBeer] = useState({})
 
 

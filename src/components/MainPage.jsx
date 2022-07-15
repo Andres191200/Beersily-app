@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { BeerModalContextProvider } from '../context/beerModalContext';
 import GetBeers from "../utils/GetBeers";
 import Welcome from "./Welcome";
 import Header from "./Header";
@@ -22,7 +23,9 @@ const MainPage = () => {
             <Header theme={theme} handleTheme={handleTheme} />
             <Welcome />
             <WhyUs />
-            <Beers/>
+            <BeerModalContextProvider>
+                <Beers />
+            </BeerModalContextProvider>
         </div>
     )
 }

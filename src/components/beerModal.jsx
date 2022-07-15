@@ -5,14 +5,13 @@ import BeerModalDetails from './BeerModalDetails';
 
 
 const BeerModal = ({ beer, modalBeerIsOpen, setModalBeerIsOpen }) => {
-
     return ReactDOM.createPortal(
         <div className={`main-modal-container ${modalBeerIsOpen && 'open'}`}>
             <ShoppingCartProvider>
                 <BeerModalDetails beer={beer} setModalBeerIsOpen={setModalBeerIsOpen} />
             </ShoppingCartProvider>
         </div>,
-        document.getElementById('beer-modal')
+        document.getElementById('root')
     )
 }
 

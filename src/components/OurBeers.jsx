@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { BeerModalContextProvider } from '../context/beerModalContext';
 import '../styles/ourbeers.css';
 import GetBeers from '../utils/GetBeers';
 import Beer from './Beer';
@@ -19,7 +20,13 @@ const OurBeers = () => {
         <div className="our-beers-main-container">
             <div className="our-beers-container">
                 {
-                    beers.slice(((page - 1) * maxPerPage), (page * maxPerPage)).map(beer => <Beer beer={beer} />)
+                    beers.slice(((page - 1) * maxPerPage), (page * maxPerPage)).map(beer => {
+                        return (
+                            <BeerModalContextProvider>
+                                <Beer beer={beer}/>
+                            </BeerModalContextProvider>
+                        )
+                    })
                 }
             </div>
             <div className="pagination">

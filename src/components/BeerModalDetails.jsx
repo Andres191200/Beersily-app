@@ -5,7 +5,7 @@ import shoppingCartContext from "../context/shoppingReducerContext";
 import { ACTIONS } from "../utils/shoppingCartActions";
 
 const BeerModalDetails = ({ beer, setModalBeerIsOpen }) => {
-    const { name, price, img, type, description, attenuation, ph, ebc, srm, abv, id } = beer;
+    const { name, price, image_url, ibu, description, attenuation, ph, ebc, srm, abv, id } = beer;
     const [textButtonContent, setTextButtonContent] = useState('ADD TO CART');
     const [addToCartButtonClick, setAddToCartButtonClick] = useState(false);
 
@@ -31,7 +31,7 @@ const BeerModalDetails = ({ beer, setModalBeerIsOpen }) => {
     return (
         <div className="beer-modal-container" onClick={(e) => { e.stopPropagation() }}>
             <div className="beer-modal-img">
-                <img src={img} alt="beer-img" />
+                <img src={image_url} alt="beer-img" />
             </div>
             <div className="beer-modal-info">
                 <div className="beer-modal-name">
@@ -41,7 +41,7 @@ const BeerModalDetails = ({ beer, setModalBeerIsOpen }) => {
                     <p>{description}</p>
                 </div>
                 <div className="beer-modal-details">
-                    <div className="beer-modal-type"><span>Type: {type}</span></div>
+                    <div className="beer-modal-type"><span>Ibu: {ibu}</span></div>
                     <div className="beer-modal-type"><span>Attenuation: {attenuation}</span></div>
                     <div className="beer-modal-type"><span>PH: {ph}</span></div>
                     <div className="beer-modal-type"><span>EBC: {ebc}</span></div>

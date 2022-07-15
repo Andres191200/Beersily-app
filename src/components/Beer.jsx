@@ -1,26 +1,37 @@
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import beerModalContext from '../context/beerModalContext';
 import '../styles/beer.css';
+import BeerModal from './beerModal';
 
 const Beer = ({ beer }) => {
     const { image_url, name, srm } = beer
-    
+    const { modalBeerIsOpen, setModalBeerIsOpen } = useContext(beerModalContext)
+    console.log(beer)
     return (
-        <div className="our-beers-beer">
-            <div className="our-beers-beer-img">
-                <img src={image_url} alt="beer img" />
+        <>
+            <div className={`${modalBeerIsOpen && 'open'}`}>
+                <BeerModal beer={beer} modalBeerIsOpen={modalBeerIsOpen} setModalBeerIsOpen={setModalBeerIsOpen}/>
             </div>
-            <div className="our-beers-beer-info">
-                <div className="our-beers-beer-name">
-                    <span>{name}</span>
+            <div className="our-beers-beer" >
+                <div className="our-beers-beer-img">
+                    <img src={image_url} alt="beer img" onClick={() => {
+                        setModalBeerIsOpen(true);
+                        console.log(modalBeerIsOpen)
+                    }} />
                 </div>
-                <div className="our-beers-price-rate">
-                    <p>4.9 <FontAwesomeIcon icon={faStar} /></p>
-                    <p className="our-beers-price">{srm}</p>
+                <div className="our-beers-beer-info">
+                    <div className="our-beers-beer-name">
+                        <span>{name}</span>
+                    </div>
+                    <div className="our-beers-price-rate">
+                        <p>4.9 <FontAwesomeIcon icon={faStar} /></p>
+                        <p className="our-beers-price">{srm}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

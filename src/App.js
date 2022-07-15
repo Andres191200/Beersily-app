@@ -16,9 +16,9 @@ function App() {
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainPage/>}/>
-          <Route path="/beers" element={<OurBeers/>}/>
-          <Route path="*" element={<NotFound/>}/>
+          <Route path="/" element={<MainPage />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/beers" element={<OurBeers />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -4,11 +4,11 @@
     z-index: 999;
 }
 
-.main-modal-container.open+* {
+.open+* {
     pointer-events: none;
 }
 
-.main-modal-container.open {
+.open {
     display: flex;
     position: fixed;
     align-items: center;
@@ -30,7 +30,7 @@
     
 }
 
-.main-modal-container.open>.beer-modal-container{
+.open>.beer-modal-container{
     transform: scale(1);
 }
 

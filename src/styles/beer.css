@@ -13,6 +13,10 @@
     justify-self: center;
 }
 
+.our-beers-container > .false{
+    display:none
+}
+
 .our-beers-beer-img > img{
     height:5rem;
     width:1rem;

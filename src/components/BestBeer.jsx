@@ -4,7 +4,7 @@ import '../styles/beerModal.css'
 import '../styles/bestBeer.css'
 
 const BestBeer = ({ beer, setModalBeerIsOpen, setBeer }) => {
-    const { name, price, img } = beer;
+    const { name, price, image_url } = beer;
 
     const openBeerModal = () => {
         setModalBeerIsOpen(true)
@@ -16,7 +16,7 @@ const BestBeer = ({ beer, setModalBeerIsOpen, setBeer }) => {
             <div className="name">
                 <span>{name}</span>
             </div>
-            <img alt='beer' src={img} />
+            <img alt='beer' src={image_url} />
             <div className="beer-info">
                 <div className="price">
                     <p>{price} EUR</p>
