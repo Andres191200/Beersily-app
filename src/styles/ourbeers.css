@@ -15,7 +15,34 @@
     width:90vw;
 }
 
+.pagination
+{
+    display:flex;
+    flex-direction: column;
+}
+
+.pagination > div{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 .pagination > p{
     font: bold 1rem var(--font-family-1);
     color:#FFF;
+}
+
+.pagination > div > button{
+    color:var(--text-color-1);
+    font-weight: bold;
+    height:2rem;
+    width: 2rem;
+    border-radius: 100%;
+    background-color: transparent;
+    border:1px solid var(--text-color-4)
+}
+
+.pagination > div > button:hover{
+    cursor: pointer;
+    border-color: var(--text-color-2);
 }

@@ -10,25 +10,24 @@ const OurBeers = () => {
     const [maxPerPage, setMaxPerPage] = useState(15);
     const [lastPage, setLastPage] = useState(0);
 
-    console.log(((page - 1) * maxPerPage))
-    console.log((page*maxPerPage))
-
     useEffect(() => {
         GetBeers().then(beers => setBeers(beers))
-        setLastPage(Math.ceil(beers.length/maxPerPage))
+        setLastPage(Math.ceil(beers.length / maxPerPage))
     }, [maxPerPage, beers.length])
 
     return (
         <div className="our-beers-main-container">
             <div className="our-beers-container">
                 {
-                    beers.slice(((page - 1) * maxPerPage), (page*maxPerPage)).map(beer => <Beer beer={beer} />)
+                    beers.slice(((page - 1) * maxPerPage), (page * maxPerPage)).map(beer => <Beer beer={beer} />)
                 }
             </div>
             <div className="pagination">
-                    <p>Page {page} of {lastPage}</p>
-                    <button>prev</button>
-                    <button>next</button>
+                <p>Page {page} of {lastPage}</p>
+                <div>
+                    <button className="prev-page" onClick={() => { page - 1 >= 1 && setPage(page - 1) }}> &#x3c; </button>
+                    <button className="next-page" onClick={() => { page + 1 <= lastPage && setPage(page + 1) }}> &#x3e; </button>
+                </div>
             </div>
         </div>
     )
