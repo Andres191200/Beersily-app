@@ -11,6 +11,12 @@
     border-radius:1rem;
     align-self: center;
     justify-self: center;
+    transition:transform .3s ease;
+}
+
+.our-beers-beer:hover{
+    transform:scale(1.1);
+    cursor: pointer;
 }
 
 .our-beers-container > .false{

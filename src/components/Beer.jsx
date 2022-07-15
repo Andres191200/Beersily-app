@@ -12,14 +12,14 @@ const Beer = ({ beer }) => {
     return (
         <>
             <div className={`${modalBeerIsOpen && 'open'}`}>
-                <BeerModal beer={beer} modalBeerIsOpen={modalBeerIsOpen} setModalBeerIsOpen={setModalBeerIsOpen}/>
+                <BeerModal beer={beer} modalBeerIsOpen={modalBeerIsOpen} setModalBeerIsOpen={setModalBeerIsOpen} />
             </div>
-            <div className="our-beers-beer" >
+            <div className="our-beers-beer" onClick={() => {
+                setModalBeerIsOpen(true);
+                console.log(modalBeerIsOpen)
+            }} >
                 <div className="our-beers-beer-img">
-                    <img src={image_url} alt="beer img" onClick={() => {
-                        setModalBeerIsOpen(true);
-                        console.log(modalBeerIsOpen)
-                    }} />
+                    <img src={image_url} alt="beer img" />
                 </div>
                 <div className="our-beers-beer-info">
                     <div className="our-beers-beer-name">
