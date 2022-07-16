@@ -4,6 +4,7 @@ import GetBeers from "../utils/GetBeers";
 import Welcome from "./Welcome";
 import WhyUs from "./WhyUs";
 import Beers from "./Beers";
+import AboutUs from "./AboutUs";
 
 const MainPage = () => {
     const [beers, setBeers] = useState(null) //eslint-disable-line
@@ -19,6 +20,7 @@ const MainPage = () => {
             <BeerModalContextProvider>
                 <Beers />
             </BeerModalContextProvider>
+            <AboutUs/>
         </div>
     )
 }

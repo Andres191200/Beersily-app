@@ -8,7 +8,7 @@ const Header = () => {
             <div className="header-container">
                 <ul>
                     <li className="header-item">
-                        <a href="#home">
+                        <a href="/#home">
                             <svg className="header-svg-link" width="108" height="36" viewBox="0 0 108 36" fill="none">
                                 <g clipPath="url(#clip0_1_2)">
                                     <rect x="4" y="4" width="100" height="28" fill="white" />
@@ -25,7 +25,7 @@ const Header = () => {
                         </a>
                     </li>
                     <li className="header-item">
-                        <a href="#beers">
+                        <a href="/#beers">
                             <svg className="header-svg-link" width="108" height="36" viewBox="0 0 108 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_1_2)">
                                     <rect x="4" y="4" width="100" height="28" fill="white" />
@@ -76,7 +76,7 @@ const Header = () => {
                         </a>
                     </li>
                     <li className="header-item">
-                        <a href="#whyus">
+                        <a href="/#whyus">
                             <svg className="header-svg-link" width="108" height="36" viewBox="0 0 108 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_1_2)">
                                     <rect x="4" y="4" width="100" height="28" fill="white" />

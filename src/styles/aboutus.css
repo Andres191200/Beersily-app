@@ -1,0 +1,73 @@
+.main-about-us-container{
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    height:92vh;
+    background-color: var(--bg-color-3);
+    font-family: var(--font-family-1);
+}
+
+.title-container{
+    padding:1rem;
+}
+
+.title-container > h1{
+    color:#FFF;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.about-us-info{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    background-image: url('https://vinepair.com/wp-content/uploads/2019/11/weasked10_social-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height:50%;
+}
+
+.about-us-cards-container{
+    display:flex;
+    justify-content: space-between;
+    width:90vw;
+    height:100%;
+}
+
+.about-us-card{
+    position:relative;
+    bottom:12rem;
+    width:18rem;
+    height: 25rem;
+    background-color: var(--bg-color-2);
+}
+
+.about-us-card h1{
+    text-align: center;
+    margin-top: 1rem;
+    color:#FFF;
+    font-size: 1.5rem;
+}
+
+.about-us-card h3{
+    margin-top:.5rem;
+    text-align: center;
+    color:#AAA;
+}
+
+
+.profile-photo-container{
+    width:100%;
+    height:75%;
+    overflow: hidden;
+}
+
+.profile-photo-container img{
+    height: 100%;
+    width: 100%;
+}
+
